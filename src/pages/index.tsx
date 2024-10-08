@@ -6,7 +6,9 @@ export default function Home() {
     <main
     >
       <h1 className="text-2xl font-bold ">Login</h1>
-      <button className="bg-slate-400 p-3 w-24 border-slate-600 border" onClick={() => signIn('auth0')}>Login</button>
+      <button className="bg-slate-400 p-3 w-24 border-slate-600 border" onClick={() => signIn('auth0', {
+        callbackUrl: '/perfil',
+      })}>Login</button>
     </main>
   );
 }
